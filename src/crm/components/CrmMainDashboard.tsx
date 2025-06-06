@@ -88,6 +88,9 @@ export default function CrmMainDashboard() {
         </Box>
       </Stack>
 
+      {/* Hello Component */}
+      <HelloComponent />
+
       {/* Stats Cards row */}
       <Grid container spacing={2} sx={{ mb: 3 }}>
         {statCardsData.map((card, index) => (
