@@ -72,7 +72,7 @@ export default function CrmMainContent() {
         alignItems="center"
         sx={{ mb: 3, display: { xs: "none", sm: "flex" } }}
       >
-        <Typography variant="h5" component="h2">
+        <Typography variant="h5" component="h2" sx={{ marginTop: "6px" }}>
           Dashboard Overview
         </Typography>
         <Box>
