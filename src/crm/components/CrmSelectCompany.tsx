@@ -4,6 +4,7 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import BusinessRoundedIcon from "@mui/icons-material/BusinessRounded";
+import { COMPANY_NAMES } from "../constants/companies";
 
 export default function CrmSelectCompany() {
   const [company, setCompany] = React.useState("acme");
