@@ -34,21 +34,21 @@ export default function CrmSelectCompany() {
               fontSize="small"
               sx={{ color: "primary.main" }}
             />
-            hello korey
+            {COMPANY_NAMES.ACME}
           </MenuItem>
           <MenuItem value="globex">
             <BusinessRoundedIcon
               fontSize="small"
               sx={{ color: "secondary.main" }}
             />
-            Globex Inc.
+            {COMPANY_NAMES.GLOBEX}
           </MenuItem>
           <MenuItem value="initech">
             <BusinessRoundedIcon
               fontSize="small"
               sx={{ color: "success.main" }}
             />
-            Initech Technologies
+            {COMPANY_NAMES.INITECH}
           </MenuItem>
         </Select>
       </FormControl>
