@@ -38,43 +38,83 @@ export default function HelloWorldUpdated() {
 
   return (
     <Box sx={{ width: "100%" }}>
-      <FormControl fullWidth size="small">
-        <Select
-          labelId="company-select-label"
-          id="company-select"
-          value={company}
-          onChange={handleChange}
-          sx={{
-            "& .MuiSelect-select": {
-              display: "flex",
-              alignItems: "center",
-              gap: 1,
-            },
-          }}
-        >
-          <MenuItem value="acme">
-            <BusinessRoundedIcon
-              fontSize="small"
-              sx={{ color: "primary.main" }}
+      <Stack spacing={2}>
+        <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+          <Typography variant="subtitle2">Company Names</Typography>
+          <Button
+            size="small"
+            startIcon={isEditing ? <SaveIcon /> : <EditIcon />}
+            onClick={toggleEdit}
+            variant={isEditing ? "contained" : "outlined"}
+          >
+            {isEditing ? "Save" : "Edit"}
+          </Button>
+        </Box>
+
+        {isEditing && (
+          <Stack spacing={1}>
+            <TextField
+              label="Primary Company"
+              value={editableNames.acme}
+              onChange={(e) => handleNameChange("acme", e.target.value)}
+              size="small"
+              fullWidth
             />
-            {COMPANY_NAMES.ACME}
-          </MenuItem>
-          <MenuItem value="globex">
-            <BusinessRoundedIcon
-              fontSize="small"
-              sx={{ color: "secondary.main" }}
+            <TextField
+              label="Secondary Company"
+              value={editableNames.globex}
+              onChange={(e) => handleNameChange("globex", e.target.value)}
+              size="small"
+              fullWidth
             />
-            {COMPANY_NAMES.GLOBEX}
-          </MenuItem>
-          <MenuItem value="initech">
-            <BusinessRoundedIcon
-              fontSize="small"
-              sx={{ color: "success.main" }}
+            <TextField
+              label="Third Company"
+              value={editableNames.initech}
+              onChange={(e) => handleNameChange("initech", e.target.value)}
+              size="small"
+              fullWidth
             />
-            {COMPANY_NAMES.INITECH}
-          </MenuItem>
-        </Select>
-      </FormControl>
+          </Stack>
+        )}
+
+        <FormControl fullWidth size="small">
+          <Select
+            labelId="company-select-label"
+            id="company-select"
+            value={company}
+            onChange={handleChange}
+            sx={{
+              "& .MuiSelect-select": {
+                display: "flex",
+                alignItems: "center",
+                gap: 1,
+              },
+            }}
+          >
+            <MenuItem value="acme">
+              <BusinessRoundedIcon
+                fontSize="small"
+                sx={{ color: "primary.main" }}
+              />
+              {editableNames.acme}
+            </MenuItem>
+            <MenuItem value="globex">
+              <BusinessRoundedIcon
+                fontSize="small"
+                sx={{ color: "secondary.main" }}
+              />
+              {editableNames.globex}
+            </MenuItem>
+            <MenuItem value="initech">
+              <BusinessRoundedIcon
+                fontSize="small"
+                sx={{ color: "success.main" }}
+              />
+              {editableNames.initech}
+            </MenuItem>
+          </Select>
+        </FormControl>
+      </Stack>
     </Box>
   );
 }
