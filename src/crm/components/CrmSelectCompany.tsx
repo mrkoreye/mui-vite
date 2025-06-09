@@ -25,6 +25,17 @@ export default function HelloWorldUpdated() {
     setCompany(event.target.value as string);
   };
 
+  const handleNameChange = (companyKey: string, newName: string) => {
+    setEditableNames((prev) => ({
+      ...prev,
+      [companyKey]: newName,
+    }));
+  };
+
+  const toggleEdit = () => {
+    setIsEditing(!isEditing);
+  };
+
   return (
     <Box sx={{ width: "100%" }}>
       <FormControl fullWidth size="small">
