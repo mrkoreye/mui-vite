@@ -45,9 +45,7 @@ export default function CrmDashboard() {
           component="main"
           sx={(theme) => ({
             flexGrow: 1,
-            backgroundColor: theme.vars
-              ? `rgba(${theme.vars.palette.background.defaultChannel} / 1)`
-              : alpha(theme.palette.background.default, 1),
+            background: "linear-gradient(135deg, #8B5CF6 0%, #EF4444 100%)",
             overflow: "auto",
           })}
         >
