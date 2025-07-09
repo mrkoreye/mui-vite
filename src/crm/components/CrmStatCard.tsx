@@ -86,7 +86,12 @@ export default function CrmStatCard({
               direction="row"
               sx={{ justifyContent: "space-between", alignItems: "center" }}
             >
-              <Typography variant="h4" component="p" fontWeight="600">
+              <Typography
+                variant="h4"
+                component="p"
+                fontWeight="600"
+                sx={{ marginTop: "14px" }}
+              >
                 {value}
               </Typography>
               <Chip
