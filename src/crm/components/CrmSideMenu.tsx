@@ -21,6 +21,7 @@ const Drawer = styled(MuiDrawer)({
   [`& .${drawerClasses.paper}`]: {
     width: drawerWidth,
     boxSizing: "border-box",
+    right: 0,
   },
 });
 
