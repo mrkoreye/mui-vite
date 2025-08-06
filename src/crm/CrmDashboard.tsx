@@ -48,6 +48,7 @@ export default function CrmDashboard() {
               ? `rgba(${theme.vars.palette.background.defaultChannel} / 1)`
               : alpha(theme.palette.background.default, 1),
             overflow: "auto",
+            marginRight: { xs: 0, md: "240px" },
           })}
         >
           <Stack
