@@ -50,7 +50,6 @@ export default function CrmDashboard() {
             overflow: "auto",
           })}
         >
-          <CrmSideMenu />
           <Stack
             spacing={2}
             sx={{
