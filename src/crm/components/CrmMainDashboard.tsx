@@ -68,7 +68,7 @@ export default function CrmMainDashboard() {
         direction="row"
         justifyContent="space-between"
         alignItems="center"
-        sx={{ mb: 3, display: { xs: "none", sm: "flex" } }}
+        sx={{ margin: "1px 0 24px", display: { xs: "none", sm: "flex" } }}
       >
         <Typography variant="h5" component="h2">
           Dashboard Overview
