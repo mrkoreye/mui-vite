@@ -22,7 +22,7 @@ export default function SideMenuMobile({
 }: SideMenuMobileProps) {
   return (
     <Drawer
-      anchor="right"
+      anchor="left"
       open={open}
       onClose={toggleDrawer(false)}
       sx={{
