@@ -21,6 +21,7 @@ const Drawer = styled(MuiDrawer)({
   [`& .${drawerClasses.paper}`]: {
     width: drawerWidth,
     boxSizing: "border-box",
+    right: 0,
   },
 });
 
@@ -28,6 +29,7 @@ export default function CrmSideMenu() {
   return (
     <Drawer
       variant="permanent"
+      anchor="right"
       sx={{
         display: { xs: "none", md: "block" },
         [`& .${drawerClasses.paper}`]: {
