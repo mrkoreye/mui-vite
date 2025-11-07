@@ -8,6 +8,7 @@ import { alpha } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
 import CrmAppNavbar from "./components/CrmAppNavbar";
 import CrmHeader from "./components/CrmHeader";
 import CrmSideMenu from "./components/CrmSideMenu";
@@ -60,6 +61,9 @@ export default function CrmDashboard() {
               mt: { xs: 8, md: 0 },
             }}
           >
+            <Typography variant="h3" component="h1" sx={{ fontWeight: 600, width: "100%", pt: 2 }}>
+              hi jorey
+            </Typography>
             <CrmHeader />
             <Routes>
               <Route index element={<CrmMainDashboard />} />
