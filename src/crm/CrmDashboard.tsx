@@ -61,6 +61,9 @@ export default function CrmDashboard() {
               mt: { xs: 8, md: 0 },
             }}
           >
+            <Typography variant="h2" component="h1" sx={{ fontWeight: 700 }}>
+              hi korey
+            </Typography>
             <CrmHeader />
             <Routes>
               <Route index element={<CrmMainDashboard />} />
