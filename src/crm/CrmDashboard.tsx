@@ -11,6 +11,7 @@ import Stack from "@mui/material/Stack";
 import CrmAppNavbar from "./components/CrmAppNavbar";
 import CrmHeader from "./components/CrmHeader";
 import CrmSideMenu from "./components/CrmSideMenu";
+import Typography from "@mui/material/Typography";
 import CrmMainDashboard from "./components/CrmMainDashboard";
 import Customers from "./pages/Customers";
 import Deals from "./pages/Deals";
