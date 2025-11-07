@@ -18,6 +18,7 @@ import Contacts from "./pages/Contacts";
 import Tasks from "./pages/Tasks";
 import Reports from "./pages/Reports";
 import Settings from "./pages/Settings";
+import Typography from "@mui/material/Typography";
 import AppTheme from "../shared-theme/AppTheme";
 import {
   chartsCustomizations,
@@ -60,6 +61,7 @@ export default function CrmDashboard() {
               mt: { xs: 8, md: 0 },
             }}
           >
+            <Typography variant="h1">hellpo kjoreuyi</Typography>
             <CrmHeader />
             <Routes>
               <Route index element={<CrmMainDashboard />} />
