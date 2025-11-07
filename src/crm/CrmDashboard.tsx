@@ -62,6 +62,7 @@ export default function CrmDashboard() {
             }}
           >
             <CrmHeader />
+            <Typography variant="h4">devo is good</Typography>
             <Routes>
               <Route index element={<CrmMainDashboard />} />
               <Route path="customers" element={<Customers />} />
