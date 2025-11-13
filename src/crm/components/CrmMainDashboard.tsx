@@ -63,6 +63,11 @@ const statCardsData = [
 export default function CrmMainDashboard() {
   return (
     <Box sx={{ width: "100%", maxWidth: { sm: "100%", md: "1700px" } }}>
+      {/* Cool Beans Title */}
+      <Typography variant="h3" component="h1" sx={{ mb: 2, fontWeight: 700 }}>
+        Cool Beans
+      </Typography>
+
       {/* Header with action buttons */}
       <Stack
         direction="row"
