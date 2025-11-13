@@ -25,7 +25,10 @@ export default function CrmHeader() {
     >
       <Stack direction="column" spacing={1}>
         <CrmNavbarBreadcrumbs />
-        <Typography variant="h4" component="h1" sx={{ fontWeight: 600 }}>
+        <Typography variant="h3" component="h1" sx={{ fontWeight: 700 }}>
+          Hello
+        </Typography>
+        <Typography variant="h4" component="h2" sx={{ fontWeight: 600 }}>
           CRM Dashboard
         </Typography>
       </Stack>
