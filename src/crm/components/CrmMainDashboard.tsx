@@ -11,6 +11,7 @@ import CrmRecentDealsTable from "./CrmRecentDealsTable";
 import CrmUpcomingTasks from "./CrmUpcomingTasks";
 import CrmSalesChart from "./CrmSalesChart";
 import CrmLeadsBySourceChart from "./CrmLeadsBySourceChart";
+import LaserTitle from "./LaserTitle";
 
 // Sample data for stat cards
 const statCardsData = [
@@ -63,6 +64,11 @@ const statCardsData = [
 export default function CrmMainDashboard() {
   return (
     <Box sx={{ width: "100%", maxWidth: { sm: "100%", md: "1700px" } }}>
+      {/* Laser Title */}
+      <Box sx={{ display: "flex", justifyContent: "center", mb: 4, mt: 2 }}>
+        <LaserTitle />
+      </Box>
+
       {/* Header with action buttons */}
       <Stack
         direction="row"
